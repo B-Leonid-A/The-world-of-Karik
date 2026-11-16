@@ -91,3 +91,21 @@ body {
 .key.eq:hover {
   background: #4cd76c;
 }
+
+/* Кликабельная ссылка для запуска приложения */
+.launch-note {
+  margin: 16px auto 0;
+  text-align: center;
+  color: #9a9aa5;
+  font-size: 14px;
+}
+
+.launch-note a {
+  color: #ff9f0a;
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+.launch-note a:hover {
+  color: #ffb340;
+}
