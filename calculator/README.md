@@ -21,9 +21,36 @@ calculator/
 └── app.js       # логика: токенизация + рекурсивный спуск
 ```
 
-## Запуск
+## 🚀 Запуск
 
-Просто откройте `calculator/index.html` в браузере:
+### Кликабельная ссылка (локальный сервер уже запущен)
+
+**Варианты ссылок** (зависят от того, на каком порту поднят сервер в вашей среде):
+
+| Сервер | Ссылка |
+|--------|--------|
+| Порт 3000 | 👉 **[http://localhost:3000](http://localhost:3000)** |
+| Порт 8000 | 👉 **[http://localhost:8000](http://localhost:8000)** |
+| Порт 8001 | 👉 **[http://localhost:8001](http://localhost:8001)** |
+
+Сервер поднимается командой из корня проекта:
+
+```bash
+python3 -m http.server 8000 --directory calculator
+# или просто:
+./launch.sh          # порт 8000 по умолчанию
+./launch.sh 5000     # любой другой порт
+```
+
+Если ни одна ссылка не открывается (сервер остановлен), выполните команду выше и перейдите по ссылке ещё раз.
+
+### Вариант без сервера
+
+Просто откройте файл `calculator/index.html` в браузере по кликабельной ссылке:
+
+👉 **[calculator/index.html](./index.html)**
+
+или из терминала:
 
 ```bash
 # macOS
@@ -32,11 +59,4 @@ open calculator/index.html
 xdg-open calculator/index.html
 # Windows
 start calculator\index.html
-```
-
-Либо запустите локальный сервер:
-
-```bash
-python3 -m http.server 8000 --directory calculator
-# затем откройте http://localhost:8000
 ```
